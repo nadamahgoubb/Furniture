@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Furniture</string>
+    <string name="email_mobile">البريد الالكترونى أو رقم الهاتف </string>
+
+    <string name="password">كلمة السر </string>
+    <string name="signin">تسجيل الدخول</string>
+    <string name="forget_password">نسيت كلمة السر</string>
+    <string name="or_connect_with">أو سجل عن طريق </string>
+    <string name="facebook">تسجيل الدخول عن طريق الفيسبوك</string>
+    <string name="google">تسجيل الدخول عن طريق جوجل</string>
+
+    <string name="dont_have_account">ليس لديك حساب؟ تسجيل</string>
+    <string name="sign_up">Signup</string>
+    <string name="account">الحساب</string>
+    <string name="category">الاقسام</string>
+    <string name="fav">المفضلة</string>
+    <string name="home">الرئيسية</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="offers">عروض التوفير</string>
+    <string name="more">المزيد</string>
+</resources>
