@@ -1,7 +1,11 @@
 package com.example.furniture.di
 
 
+import com.example.furniture.domain.IHomeDataSource
+import com.example.furniture.domain.IHomeRepo
 import com.example.furniture.source.ApiInterface
+import com.example.myapplication.data.soure.DefaultRepo
+import com.example.myapplication.data.soure.HomeRemoteDataSource
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -13,29 +17,43 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 class AppModul() {
-/*
+
 
     @Singleton
-    @RemoteProductDataSource
     @Provides
     fun provideRemoteProductsDataSource(
         api: ApiInterface
-    ): IProductsDataSource = ProductsRemoteDataSource(api)
+    ): IHomeDataSource = HomeRemoteDataSource(api)
 
 
     @Singleton
     @Provides
     fun provideDefaultProductRepository(
-        @RemoteProductDataSource remote: IProductsDataSource,
-        @LocalProductDataSource local: IProductsDataSource
+        remote: IHomeDataSource ,
+      local: IHomeDataSource):IHomeRepo  = DefaultRepo(remote, local )  as IHomeRepo
+
+}
+ /*   @Singleton
+    @RemoteProductDataSource
+    @Provides
+    fun provideRemoteProductsDataSource(
+        api: ApiInterface
+    ): IHomeDataSource = HomeRemoteDataSource(api)
+
+
+    @Singleton
+    @Provides
+    fun provideDefaultProductRepository(
+        @RemoteProductDataSource remote: IHomeDataSource,
+        @LocalProductDataSource local: IHomeDataSource
     )
-    = DefaultRepo(remote, local ) as IProductsRepository
+    = DefaultRepo(remote, local ) as IHomeRepo
     @LocalProductDataSource
     @Singleton
     @Provides
 
     fun provideLocalProductDataSource(
-    ): IProductsDataSource = ProductsLocalDataSource()
+    ): IHomeDataSource = HomeLocalDataSource()
 
 
     @Qualifier
@@ -46,6 +64,5 @@ class AppModul() {
     @Retention(AnnotationRetention.BINARY)
     annotation class LocalProductDataSource
 
-*/
 
-}
+*/
