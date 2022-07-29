@@ -59,7 +59,6 @@ class HomeFragment : Fragment(), IItemClickListener {
         homeVm.getOffers()
         adapter = activity?.let { OffersAdapter(it, this) }!!
         binding.recOffers.init(requireContext(), adapter)
-
         getData()
     }
 

@@ -21,7 +21,7 @@ object Extension {
     fun ImageView.loadImage(url: String, context: Context) {
         Glide.with(context)
             .load(url)
-            .apply(RequestOptions().placeholder(R.drawable.progress))
+            .apply(RequestOptions().placeholder(com.example.furniture.R.drawable.progress))
             .into(this)
     }
 
@@ -31,7 +31,6 @@ object Extension {
     ) {
         val layoutManager = LinearLayoutManager(context)
         this.layoutManager = layoutManager
-        this.setHasFixedSize(true)
         this.adapter = adapter
     }
 

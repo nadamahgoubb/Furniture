@@ -16,7 +16,7 @@ data class Data(
 
     @SerializedName("categories") var categories: ArrayList<Categories> = arrayListOf(),
     @SerializedName("offers") var offers: ArrayList<Offers> = arrayListOf(),
-    @SerializedName("saves") var saves: ArrayList<String> = arrayListOf(),
+  //  @SerializedName("saves") var saves: ArrayList<Saves> = arrayListOf(),
     @SerializedName("discounts") var discounts: ArrayList<Discounts> = arrayListOf(),
     @SerializedName("branch_type") var branchType: ArrayList<BranchType> = arrayListOf()
 
